@@ -28,6 +28,9 @@ vim.api.nvim_set_keymap('n', 'K', '5k', { noremap = true })
 vim.api.nvim_set_keymap('n', 'L', '5l', { noremap = true })
 vim.api.nvim_set_keymap('n', 'S', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'Q', ':q<CR>', { noremap = true })
+-- open terminal
+vim.api.nvim_set_keymap('n', '<C-`>', ':terminal<CR>', { noremap = true })
+
 
 -- cancel highline
 ---- leader + n

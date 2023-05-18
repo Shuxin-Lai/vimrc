@@ -1,40 +1,41 @@
-exec "nohlsearch"
-filetype indent on
-filetype on
-filetype plugin on
-:set number
-set encoding=utf-8
-set showmode
-set showcmd
-set encoding=utf-8
-set t_Co=256
-set autoindent
-set shiftwidth=4
-set expandtab
-set softtabstop=4
-set smartindent
-set tabstop=4
-set cursorline
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-" set autochdir
-set autowriteall
-set hidden
-set relativenumber
+" exec "nohlsearch"
+" filetype indent on
+" filetype on
+" filetype plugin on
+" :set number
+" set encoding=utf-8
+" set showmode
+" set showcmd
+" set encoding=utf-8
+" set t_Co=256
+" set autoindent
+" set shiftwidth=4
+" set expandtab
+" set softtabstop=4
+" set smartindent
+" set tabstop=4
+" set cursorline
+" set hlsearch
+" set incsearch
+" set ignorecase
+" set smartcase
+" " set autochdir
+" set autowriteall
+" set hidden
+" set relativenumber
+" inoremap <c-u> <c-g>u<c-u>
+" inoremap <c-w> <c-g>u<c-w>
+" vnoremap cp "+y<ESC>
+" imap jj <Esc>
+
+
+" compat with vscode
 noremap H 5h
 noremap J 5j
 nnoremap K 5k
 noremap L 5l
 map S :w<CR>
 map Q :q<CR>
-inoremap <c-u> <c-g>u<c-u>
-inoremap <c-w> <c-g>u<c-w>
-vnoremap cp "+y<ESC>
-imap jj <Esc>
-
-
 
 "VSCode
 function! s:split(...) abort
