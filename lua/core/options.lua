@@ -48,5 +48,4 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd[[colorscheme tokyonight-storm]]
-
+vim.cmd [[colorscheme tokyonight-storm]]
