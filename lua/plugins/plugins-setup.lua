@@ -23,22 +23,21 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim' -- 主题
-  --use {
-   -- 'nvim-lualine/lualine.nvim',  -- 状态栏
-    --requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  --}
-  use {'romgrk/barbar.nvim', requires = {
-    'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-    'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-  }}
+  use {
+   'nvim-lualine/lualine.nvim',  -- 状态栏
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   
   use {
     'nvim-tree/nvim-tree.lua',  -- 文档树
     requires = {
       'nvim-tree/nvim-web-devicons', -- 文档树图标
-    }
+      }    
   }
+  use "christoomey/vim-tmux-navigator" -- 用ctl-hjkl来定位窗口
+  use "nvim-treesitter/nvim-treesitter" -- 语法高亮
+  use "p00f/nvim-ts-rainbow" -- 配合treesitter，不同括号颜色区分
 
 
   if packer_bootstrap then
